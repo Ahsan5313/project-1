@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    width:100%;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height:60px;
+    padding: 1px 10px;
+    box-shadow: 15px 5px 4px cadetblue;
+}
+header h1{
+    text-shadow: 5px 5px 2px cadetblue;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.link a{
+   display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+  background-color: lightseagreen;
+   position: relative;
+   top:10px;
+   left: 0px;
+   
+}
+.link a:hover{
+    background-color: grey;
+    color:khaki;
+}
+
+.para{
+    text-align: justify;
+   
+    padding: 10px 15px;
+    background-color: lightseagreen;
+    margin: 5px;
+    
+}
+.qusetion{
+    padding: 20px 15px;
+    background-color: lightskyblue;
+    height: min-content;
+}
+.qusetion h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 5px;
+}
+.qusetion p{
+    text-align: center;
+    color:red;
+    text-transform: capitalize;
+    padding: 20px 1px;
+}
+.qusetion p::before{
+    content: "ANS:";
+}
+.qusetion P::before{
+    word-spacing: 15px;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width:576px){
+               body{
+                   background-color: seagreen;
+               } 
+               header h1{
+                   text-shadow: 5px 5px 2px white;
+               }
+               main{
+                  display: grid;
+                  grid-template-rows: 100% 100% 100%;
+                 
+               }
+
+}
+
+
